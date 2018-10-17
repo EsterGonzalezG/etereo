@@ -1,13 +1,13 @@
+
+import '../stylesheet/PhoneDetailComponent.css';
 import React from 'react';
-
-
 class PhoneDetailComponent extends React.Component {
 
     render() {
 
 
         return (
-            <div className="phone__detail">
+            <div className="detail__component">
 
                 {this.props.listPhones
                     .filter((item) => {
@@ -15,17 +15,21 @@ class PhoneDetailComponent extends React.Component {
                     })
                     .map((item) => {
                         return (
-                            <div key={item.id}>
+                            <div className="phone__detail" key={item.id}>
                                 <h1 className="details__name">Modelo: {item.product}</h1>
                                 <div className="details__characteristics">
-                                    <p>Descripcion: {item.description}</p>
-                                    <p>Precio: {item.price}</p>
+                                <div className="img__item" style={{ backgroundImage: 'url(' + item.image + ')' }}></div>
+                                    <div className="details__container">
+
+                                    <p className="details__description">Descripcion: {item.description}</p>
+                                    <p className="details__price" > Precio: {item.price}</p>
+                                    </div>
                                 </div>
-                                <ul>
-                                    <h3 className="details__colors">Colores disponibles:</h3>
+                                <ul className="details__colors">
+                                    <h3 className="details__colors__title">Colores disponibles:</h3>
                                     {item.color.map((item) => {
                                         return (
-                                            <li key={item.id} className="details__colors__list">{item}</li>
+                                            <li key={item.id} style={{color:item}} className="details__colors__list">{item}</li>
                                         )
                                     })}
                                 </ul>

@@ -1,10 +1,10 @@
 
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { css } from 'react-emotion';
 import { PacmanLoader } from 'react-spinners';
-
-
+import '../stylesheet/PhoneListContainer.css';
+import React from 'react';
 const override = css`
     display: block;
     margin: 0 auto;
@@ -17,17 +17,21 @@ class PhoneListContainer extends React.Component {
 
             return (
                 <main>
+                    <h1 className="phone__title">Lista de móviles</h1>
                     <ul className="phone__list">
 
                         {this.props.listPhones
                             .map((item) => {
                                 return (
+
                                     <li className="phone__item" key={item.id}>
                                         <Link to={`/PhoneDetailComponent/${item.id}`} >
-                                            <img src={item.image} alt={item.product}></img>
+                                            <div className="img__item" style={{ backgroundImage: 'url(' + item.image + ')' }}>
+                                            </div>
                                         </Link>
 
                                     </li>
+
                                 );
                             })}
                     </ul>

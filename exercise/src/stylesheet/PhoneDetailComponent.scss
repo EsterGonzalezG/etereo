@@ -1,0 +1,52 @@
+.detail__component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.phone__detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #aaffff;
+    width: 800px;
+    border-radius:10px;
+    margin: 50px auto;
+    .details__name{
+        text-align: center;
+    }
+    .details__characteristics{
+        // width: 1000px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         .details__container{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+            .details__description{
+                width: 300px;
+                padding: 20px;
+            }
+         }
+        
+    }
+    .img__item{
+        width: 200px;
+        height: 200px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .details__colors{
+        text-align: left;
+    }
+    .details__colors__list{
+        list-style: none;
+        text-align: center;
+    }
+}
