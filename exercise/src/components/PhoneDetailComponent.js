@@ -7,7 +7,7 @@ class PhoneDetailComponent extends React.Component {
 
 
         return (
-            <div className="pokemonDetails">
+            <div className="phone__detail">
 
                 {this.props.listPhones
                     .filter((item) => {
@@ -16,16 +16,16 @@ class PhoneDetailComponent extends React.Component {
                     .map((item) => {
                         return (
                             <div key={item.id}>
-                                <h1 className="pokemonDetails__name">Modelo: {item.product}</h1>
-                                <div className="pokemonDetails__characteristics">
+                                <h1 className="details__name">Modelo: {item.product}</h1>
+                                <div className="details__characteristics">
                                     <p>Descripcion: {item.description}</p>
                                     <p>Precio: {item.price}</p>
                                 </div>
                                 <ul>
-                                    <h3 className="pokemonDetails__abilities">Colores disponibles:</h3>
+                                    <h3 className="details__colors">Colores disponibles:</h3>
                                     {item.color.map((item) => {
                                         return (
-                                            <li key={item.id} className="pokemonDetails__abilities__list">{item}</li>
+                                            <li key={item.id} className="details__colors__list">{item}</li>
                                         )
                                     })}
                                 </ul>

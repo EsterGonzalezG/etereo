@@ -1,6 +1,5 @@
 
 import React from 'react';
-//import PhoneDetailComponent from './PhoneDetailComponent';
 import { Link } from 'react-router-dom';
 import { css } from 'react-emotion';
 import { PacmanLoader } from 'react-spinners';
@@ -17,21 +16,22 @@ class PhoneListContainer extends React.Component {
         if (this.props.listPhones.length > 1) {
 
             return (
+                <main>
+                    <ul className="phone__list">
 
-                <ul className="pokemon__list">
+                        {this.props.listPhones
+                            .map((item) => {
+                                return (
+                                    <li className="phone__item" key={item.id}>
+                                        <Link to={`/PhoneDetailComponent/${item.id}`} >
+                                            <img src={item.image} alt={item.product}></img>
+                                        </Link>
 
-                    {this.props.listPhones
-                        .map((item) => {
-                            return (
-                                <li className="pokemon__item" key={item.id}>
-                                    <Link to={`/PhoneDetailComponent/${item.id}`} >
-                                        <img src={item.image} alt={item.product}></img>
-                                    </Link>
-
-                                </li>
-                            );
-                        })}
-                </ul>
+                                    </li>
+                                );
+                            })}
+                    </ul>
+                </main>
             );
 
         } else {
