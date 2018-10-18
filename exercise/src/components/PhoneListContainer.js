@@ -13,7 +13,7 @@ const override = css`
 class PhoneListContainer extends React.Component {
 
     render() {
-        if (this.props.listPhones.length > 1) {
+        if (this.props.listPhones.length >1) {
 
             return (
                 <main>
