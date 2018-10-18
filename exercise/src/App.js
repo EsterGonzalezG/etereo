@@ -25,7 +25,7 @@ class App extends Component {
       .then(listPhones => {
 
         this.setState({
-          listPhones: listPhones.data.phones
+          listPhones: listPhones
         });
 
       })
