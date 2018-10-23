@@ -1,10 +1,10 @@
 
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import { css } from 'react-emotion';
 import { PacmanLoader } from 'react-spinners';
-
-
+import '../stylesheet/PhoneListContainer.css';
+import React from 'react';
 const override = css`
     display: block;
     margin: 0 auto;
@@ -13,21 +13,23 @@ const override = css`
 class PhoneListContainer extends React.Component {
 
     render() {
-        if (this.props.listPhones.length > 1) {
-
+        if (this.props.listPhones.length) {
             return (
                 <main>
+                    <h1 className="phone__title">Lista de móviles</h1>
                     <ul className="phone__list">
-
                         {this.props.listPhones
-                            .map((item) => {
+                            .map((phone) => {
                                 return (
-                                    <li className="phone__item" key={item.id}>
-                                        <Link to={`/PhoneDetailComponent/${item.id}`} >
-                                            <img src={item.image} alt={item.product}></img>
+
+                                    <li className="phone__item" key={phone.id}>
+                                        <Link to={`/PhoneDetailComponent/${phone.id}`} >
+                                            <div className="img__item" style={{ backgroundImage: 'url(' + phone.image + ')' }}>
+                                            </div>
                                         </Link>
 
                                     </li>
+
                                 );
                             })}
                     </ul>
@@ -35,6 +37,7 @@ class PhoneListContainer extends React.Component {
             );
 
         } else {
+
             return (
                 <div className='sweet-loading'>
                     <PacmanLoader

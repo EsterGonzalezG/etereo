@@ -25,7 +25,7 @@ class App extends Component {
       .then(listPhones => {
 
         this.setState({
-          listPhones: listPhones.data.phones
+          listPhones: listPhones
         });
 
       })
@@ -45,7 +45,7 @@ class App extends Component {
           <Route
             path='/PhoneDetailComponent/:id'
             render={props => <PhoneDetailComponent match={props.match}
-              listPhones={this.state.listPhones} />}
+              listPhones={this.state.listPhones} loading={this.loading} />}
           />
         </Switch>
       </Fragment>

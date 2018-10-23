@@ -1,0 +1,29 @@
+.phone__title {
+  text-align: center;
+  margin: 50px; }
+
+.phone__list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px; }
+  .phone__list .phone__item {
+    list-style: none;
+    min-width: 200px;
+    min-height: 200px; }
+  .phone__list .img__item {
+    width: 200px;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+@media all and (min-width: 768px) {
+  .phone__list {
+    display: grid;
+    grid-template-columns: auto auto auto; } }

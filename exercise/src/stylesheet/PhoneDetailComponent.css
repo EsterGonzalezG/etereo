@@ -1,0 +1,97 @@
+.phone__detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #6593ed;
+  width: 300px;
+  margin: 0 auto; }
+  .phone__detail .details__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .phone__detail .details__name {
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+    font-size: 20px; }
+  .phone__detail .details__characteristics {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .phone__detail .details__characteristics .details__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .phone__detail .details__characteristics .details__container .details__description {
+        width: 200px;
+        padding: 20px;
+        font-size: 14px; }
+  .phone__detail .img__phone {
+    width: 300px;
+    height: 30vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .phone__detail .details__colors__title {
+    margin-left: 20px; }
+  .phone__detail .details__colors {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px; }
+  .phone__detail .details__colors__list {
+    list-style: none;
+    text-align: center; }
+
+@media all and (min-width: 768px) {
+  .phone__detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    background: #6593ed;
+    width: 700px;
+    border-radius: 10px solid black;
+    margin: 0 auto; }
+    .phone__detail .details__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+    .phone__detail .details__name {
+      text-align: center;
+      margin: 0px; }
+    .phone__detail .details__characteristics {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .phone__detail .details__characteristics .details__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .phone__detail .details__characteristics .details__container .details__description {
+          width: 300px;
+          padding: 20px;
+          margin: 0; }
+    .phone__detail .img__phone {
+      width: 400px;
+      height: 100vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .phone__detail .details__colors__title {
+      margin-left: 20px; }
+    .phone__detail .details__colors {
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0; }
+    .phone__detail .details__colors__list {
+      list-style: none;
+      text-align: center; } }
