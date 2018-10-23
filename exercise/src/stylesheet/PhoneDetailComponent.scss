@@ -7,7 +7,7 @@
     min-height: 100vh;
     background: #6593ed;
     width: 300px;
-    margin: 50px auto;
+    margin: 0 auto;
     .details__container{
         display: flex;
         flex-direction: column;
@@ -67,12 +67,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    height: 90vh;
+    height: 100vh;
     background: #6593ed;
    
     width: 700px;
      border-radius:10px solid black;
-    margin: 50px auto;
+    margin:0 auto;
     .details__container{
         display: flex;
         flex-direction: column;
