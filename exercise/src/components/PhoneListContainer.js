@@ -16,7 +16,7 @@ class PhoneListContainer extends React.Component {
         if (this.props.listPhones.length) {
             return (
                 <main>
-                    <h1 className="phone__title">Lista de móviles</h1>
+                    <h1 className="phone__title">List of mobiles</h1>
                     <ul className="phone__list">
                         {this.props.listPhones
                             .map((phone) => {
