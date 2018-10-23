@@ -1,10 +1,10 @@
+import axios from 'axios';
 
 export function getListPhones() {
-    const url = 'http://localhost:3001/phones';
-    return fetch(url)
-      .then(response => response.json())
-      .then(data => {
-          console.log(data.phones);
-        return data.phones;
-      });
-  }
+  
+      return  axios.get('http://localhost:3001/phones')
+                .then(phones => {
+                        return phones.data.phones;
+                });
+
+}
