@@ -13,20 +13,18 @@ const override = css`
 class PhoneListContainer extends React.Component {
 
     render() {
-        if (this.props.listPhones.length >1) {
-
+        if (this.props.listPhones.length) {
             return (
                 <main>
                     <h1 className="phone__title">Lista de móviles</h1>
                     <ul className="phone__list">
-
                         {this.props.listPhones
-                            .map((item) => {
+                            .map((phone) => {
                                 return (
 
-                                    <li className="phone__item" key={item.id}>
-                                        <Link to={`/PhoneDetailComponent/${item.id}`} >
-                                            <div className="img__item" style={{ backgroundImage: 'url(' + item.image + ')' }}>
+                                    <li className="phone__item" key={phone.id}>
+                                        <Link to={`/PhoneDetailComponent/${phone.id}`} >
+                                            <div className="img__item" style={{ backgroundImage: 'url(' + phone.image + ')' }}>
                                             </div>
                                         </Link>
 
@@ -39,6 +37,7 @@ class PhoneListContainer extends React.Component {
             );
 
         } else {
+
             return (
                 <div className='sweet-loading'>
                     <PacmanLoader
