@@ -4,10 +4,9 @@ Aplicación de react que nos muestra los datos de una Api Rest, de teléfonos m�
 ![seleccion_001](https://user-images.githubusercontent.com/39790106/47107767-7bb9ff00-d24a-11e8-95f7-9e309508c109.png)
 
 
-Al pinchar en cualquira de las fotos nos lleva a otra pantalla para mostrar las características del móvil seleccionado (Maquetación provisional)
+Al pinchar en cualquira de las fotos nos lleva a otra pantalla para mostrar las características del móvil seleccionado 
 
-![seleccion_002](https://user-images.githubusercontent.com/39790106/47107851-ac9a3400-d24a-11e8-924c-12a79d68f804.png)
-
+![seleccion_004](https://user-images.githubusercontent.com/39790106/47347358-6102e280-d6af-11e8-8fba-1e9f040098e7.png)
 
 Para poder ejecutarlo en local primero debes posicionarte mediante la terminal en la carpeta principal del proyecto, etéreo, después debes ejecutar el comando:
 
